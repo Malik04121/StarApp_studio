@@ -1,0 +1,137 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body {
+    background-color: rgb(225, 245, 248);  
+  }
+#container{
+    display: flex;
+    gap: 20%;
+    padding: 8%; 
+}
+
+#image_box{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+#loading_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+#loading_icon>svg{
+    width: 25%;
+    height: auto;
+    animation: rotate 2s linear infinite;
+    fill:rgb(35, 177, 243); 
+}
+#small_loading_icon{
+    animation: rotate 2s linear infinite;
+    fill: white;
+
+}
+
+#image_box img{
+position: absolute;
+}
+#umbrella{
+    width: 100%;
+    height: 100%;
+}
+#detail_box{
+    margin-top: 5%;
+}
+h1{
+    font-weight:bolder;
+    font-size: 3rem;
+    letter-spacing: -1px;
+}
+h3{
+    margin-top: 15%;
+    line-height: 0;
+}
+h3+p{
+    font-size: 1.1rem;
+    line-height: 0.5;
+}
+h3+p+p{
+    font-size: smaller;
+}
+#add_button{
+    margin-top: 2%;
+    width: 100%;
+    height: 10%;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 6%;
+    color: white;
+    background-color: rgb(35, 177, 243);
+    gap: 20%;
+}
+svg{
+    color: white;
+}
+#logoImage{
+    width:70px;
+    height:40px;
+    
+    z-index: 1000;
+    bottom: 8%;
+}
+#color_selection {
+    display: flex;
+    width:80%;
+    justify-content: space-between;
+}
+.circle{
+    height:30px;
+    width: 30px;
+    border-radius: 100%;
+    cursor:pointer
+}
+#color_yellow{
+    background-color:rgb(252, 180, 48);
+   
+}
+#color_grey{
+    background-color: rgb(37, 29, 29);
+   
+}
+#color_silver{
+    background-color: rgb(172, 164, 164);
+   
+}
+#color_navy{
+    background-color: rgb(8, 8, 85);
+}
+#color_pink{
+    background-color: rgb(243, 84, 145);
+}
+#color_skyblue{
+    background-color: rgb(82, 175, 238);
+}
+#color_orange{
+    background-color: rgb(253, 147, 25);
+}
+#color_maroom{
+   background-color: rgb(221, 71, 78);
+}
+
+
+
